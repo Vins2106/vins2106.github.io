@@ -334,7 +334,7 @@ span.ripple {
 }
 
 .footer {
-	background-color: #0099ff;
+	background-color: #1f1f1f;
 }
 
 .footers {
@@ -348,7 +348,7 @@ span.ripple {
 }
 
 .footer-item h2, .footer-item h2 i, .footer-item a, .footer-item a i {
-	color: black;
+	color: white;
 }
 
 .footer-item h2 {
@@ -363,6 +363,47 @@ span.ripple {
 .footer-item .sosmed2 a {
 	margin: 5px 0px;
 	font-size: 18px;
+}
+
+.main5 {
+	display: flex;
+	flex-direction: column;
+}
+
+.certificates {
+	display: flex;
+	min-height: 100vh;
+	background-color: #0099ff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.certificates h1 {
+	margin-bottom: 30px;
+	color: black;
+}
+
+.certificates h1::after {
+	content: "";
+	display: block;
+	border-bottom: 4px solid black;
+	max-width: 50px;
+	margin: 10px auto;
+}
+
+.certificate img {
+	width: 100%;
+	max-width: 600px;
+	border-radius: 16px;
+}
+
+.certificate img:hover {
+	transform: scale(1.1);
+}
+
+.certificates .certificate {
+	margin: 20px;
 }
 
 @keyframes shake {
