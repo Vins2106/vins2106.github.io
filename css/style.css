@@ -280,10 +280,33 @@ body.navbaractive {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 50px;
+	justify-content: center;
 }
 
 .sosmed a {
 	margin: 10px;
+}
+
+.sosmed a.arrow {
+	animation: borderdown 0.5s; 	
+}
+
+.sosmed button {
+	margin-top: 10px;
+}
+
+@keyframes borderdown {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
 }
 
 .sosmed a i {

@@ -45,3 +45,13 @@ function toggleNavbar() {
 		display = true;
 	}
 }
+
+function toggleDmIG() {
+	let icon = document.getElementById("showme");
+	if (!icon) return;
+
+	icon.classList.add("arrow");
+	setTimeout(() => {
+		icon.classList.remove("arrow")
+	}, 500)
+}
