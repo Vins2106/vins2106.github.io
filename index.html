@@ -1,35 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
+	<title>Vincent Saerang - Portofolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tebak Kelereng</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
 	<link rel="icon" href="./img/logo.png">
-	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- 
+	 * Font awesome
+	 -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	 <!-- 
+	  * Meta
+	  -->
+		  <!-- Primary Meta Tags -->
+	<title>Vincent Saerang - Portofolio</title>
+	<meta name="title" content="Vincent Saerang - Portofolio">
+	<meta name="description" content="Vincent saerang portofolio">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://metatags.io/">
+	<meta property="og:title" content="Vincent Saerang - Portofolio">
+	<meta property="og:description" content="Vincent saerang portofolio">
+	<meta property="og:image" content="./img/logo.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://metatags.io/">
+	<meta property="twitter:title" content="Vincent Saerang - Portofolio">
+	<meta property="twitter:description" content="Vincent saerang portofolio">
+	<meta property="twitter:image" content="./img/logo.png">	  
 </head>
-<body>
-	<noscript>Website ini memerlukan javascript untuk berjalan.</noscript>
-
-	<h1>Mari bermain <strong>Tebak Kelereng bersama ku!</strong></h1>
-	<p>Cara mainnya kamu tinggal menebak kelereng yang di sembunyikan robot berjumlah ganjil atau genap.</p>
-
-	<div class="status">
-		<span id="total-menang">Total kemenangan: 0</span>
-		<br>
-		<span id="status-kelereng">Kelereng mu: 10</span>
-		<br>
-		<span id="status-kelereng-robot">Kelereng robot: 10</span>		
+<body id="body">
+	<div class="loading" id="loading">
+		<div class="loading-item"></div>
 	</div>
 
-	<br>
-	<br>
+	<div class="main">
+		<div class="navbar notload" id="navbar">
+			<div class="container">
+				<div class="navbar-nav">
+					<div class="navbar-brand">
+						<img src="./img/logo.png" alt="logo" draggable="false">
+						<span>Vincent.</span>
+					</div>
 
-	<div class="input">
-		<input type="number" id="taruhan" max="10" min="1" placeholder="1-10" value="1">
-		<input id="tebakan" type="text" placeholder="ganjil/genap">
-		<button onclick="tebak()">Tebak!</button>		
+					<span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar()" id="navbar-toggler" class="fas fa-bars"></i></span>
+
+					<div class="navs"> 
+						<ul id="navs">
+							<li><a href="#skills"  onclick="toggleNavbar()">Skills</a></li>
+							<li><a href="#tools" onclick="toggleNavbar()">Tools</a></li>
+							<li><a href="#projects" onclick="toggleNavbar()">Projects</a></li>
+							<li><a href="#certificates" onclick="toggleNavbar()">Certificates</a></li>		
+							<li><a href="https://github.com/Vins2106/vins2106.github.io" target="_blank"></a></li>					
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="jumbotron-box">
+			<div class="container">
+				<div class="jumbotron">
+					<div class="jumbotron-item notload">
+						<img src="./img/logo.png" alt="logo" draggable="false">
+					</div>
+					<div class="jumbotron-item notload" notload-delay="true">
+						<h1>Hi! im <strong>Vincent</strong>...</h1>
+						<p>you can call me <strong>Vins</strong>, im a <strong>student</strong> and <strong>web developer</strong>. i've work as <strong>web developer</strong> for 1 year, and i have <strong>5++ website projects.</strong></p>
+						<div class="sosmed">
+							<a href="https://github.com/Vins2106"><i class="fab fa-github"></i></a>
+							<a href="https://instagram.com/Vins2106" id="showme"><i class="fab fa-instagram"></i></a>
+							<a href="https://twitter.com/Vins2106_"><i class="fab fa-twitter"></i></a>
+							<a href="https://youtube.com/c/Vins2106"><i class="fab fa-youtube"></i></a>
+						</div>
+					    <button class="btn" onclick="toggleDmIG()">Contact me</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main2">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L0,32L288,32L288,160L576,160L576,32L864,32L864,128L1152,128L1152,96L1440,96L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"></path></svg>
+		<div class="skills"> 
+			<h1 class="skills-t" id="skills">Skills</h1>
+			<div class="container">
+					<div class="skill" onclick="window.open('https://www.javascript.com/', '_blank')"><i class="fab fa-js"></i> Javascript</div>
+					<div class="skill" onclick="window.open('https://www.w3schools.com/css/', '_blank')"><i class="fab fa-css3"></i> Css</div>
+
+					<div class="skill" onclick="window.open('https://www.w3schools.com/html/', '_blank')"><i class="fab fa-html5"></i> Html</div>
+
+					<div class="skill" onclick="window.open('https://getbootstrap.com/', '_blank')"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+
+					<div class="skill" onclick="window.open('https://jquery.com/', '_blank')"> Jquery</div>
+
+					<div class="skill" onclick="window.open('https://expressjs.com/', '_blank')">ExpressJs</div>
+			</div>
+		</div>
+		<div class="skills"> 
+			<h1 class="skills-t" id="tools">Tools</h1>
+			<div class="container">
+					<div class="skill" onclick="window.open('https://figma.com', '_blank')">Figma</div>
+					<div class="skill" onclick="window.open('https://sublimetext.com', '_blank')">Sublime text</div>
+
+					<div class="skill" onclick="window.open('https://code.visualstudio.com/', '_blank')">Visual Studio Code</div>
+
+					<div class="skill" onclick="window.open('https://www.google.com/intl/id_id/chrome/', '_blank')">Chrome</div>
+
+					<div class="skill" onclick="window.open('https://glitch.com '_blank')">Glitch</div>
+			</div>
+		</div>		
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L0,32L288,32L288,160L576,160L576,32L864,32L864,128L1152,128L1152,96L1440,96L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"></path></svg>
 	</div>
 
-	<script src="./js/script.js"></script>
+	<div class="main3">
+		<h1 id="projects">Projects</h1>
+		<p>other projects are not here because they have been disabled, you can see the project source code on <a href="https://github.com/Vins2106" target="_blank">my github</a></p>
+		<div class="container">
+			<div class="projects">
+				<div class="project">
+					<img draggable="false" src="./img/ss3.png" alt="project1">
+					<p>This project name is <strong>Free Discord Bot Website Template</strong>. this project i make for <strong>anyone who have discord bot</strong>...</p>
+					<div class="buttons">
+						<button class="btn" onclick="window.open('https://github.com/Vins2106/Free-Discord-Bot-Website', '_blank')">Source</button>
+						<button class="btn" onclick="window.open('https://vins2106.github.io/Free-Discord-Bot-Website/', '_blank')">Demo</button>
+					</div>
+				</div>
+				<div class="project">
+					<img draggable="false" src="./img/ss1.png" alt="project2">
+					<p>This is my Discord Bot website named <strong>Bee3</strong>, this website have dashboard and realtime music player.</p>
+					<div class="buttons">
+						<button class="btn" onclick="window.open('https://github.com/Bee3-Team/Bee3', '_blank')">Source</button>
+						<button class="btn" onclick="window.open('https://beee.cf', '_blank')">Demo</button>
+					</div>
+				</div>
+				<div class="project">
+					<img draggable="false" src="./img/ss2.png" alt="project3">
+					<p>This is a <strong>ChatApp</strong> make with expressjs and socket.io, this project name is <strong>Zhatting</strong>. you can make your own Bot there with our npm package</p>
+					<div class="buttons">
+						<button class="btn" onclick="window.open('https://github.com/Vins2106/zhat.cf', '_blank')">Source</button>
+						<button class="btn" onclick="window.open('https://zhat.cf', '_blank')">Demo</button>
+					</div>
+				</div>
+				<div class="project">
+					<img draggable="false" src="./img/ss4.png" alt="project4">
+					<p>This is a simple game, inspired by <strong>Squid Game Ep GGANBU</strong></p>
+					<div class="buttons">
+						<button class="btn" onclick="window.open('https://github.com/Vins2106/tebakkelereng', '_blank')">Source</button>
+						<button class="btn" onclick="window.open('https://vins2106.github.io/tebakkelereng', '_blank')">Demo</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+
+	<div class="main5">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L0,32L288,32L288,160L576,160L576,32L864,32L864,128L1152,128L1152,96L1440,96L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"></path></svg>
+		<div class="certificates">
+		    <h1 id="certificates">Certificates</h1>
+			<div class="certificate">
+				<img src="./img/certificate.jpg" alt="HTML certificate">
+			</div>
+			<div class="certificate">
+				<img src="./img/certificate2.jpg" alt="CSS certificate">
+			</div>	
+			<div class="certificate">
+				<img src="./img/certificate3.png" alt="CSS certificate">
+			</div>
+			<div class="certificate">
+				<img src="./img/certificate4.jpg" alt="CSS certificate">
+			</div>		
+		</div>
+<!-- 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L0,32L288,32L288,160L576,160L576,32L864,32L864,128L1152,128L1152,96L1440,96L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"></path></svg> -->
+	</div>	
+
+	<script type="text/javascript" src="./js/script.js"></script>
+
 </body>
-</html>	
+</html>
