@@ -1,4 +1,4 @@
-# My Portofolio website
-### [demo](https://vins2106.github.io)
+# Tebak Kelereng
+#### game ini terinspirasi dari Squid Game Episode GGANBU
 
-# you can use this website template for your portofolio...
+# focus di system bukan UI jadi maap kalo UInya jelek
