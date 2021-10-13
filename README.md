@@ -28,4 +28,4 @@ this is single web app (SWA) made with Vanilla Javascript, CSS, HTML
 
 ## give a star pls
 
-# Current version 1.0.0
+# Current version 1.0.1
