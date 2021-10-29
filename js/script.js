@@ -8,7 +8,6 @@ window.onload = () => {
 		addClassTo(lPG, ["loaded"]);
 	}, 1000)
 }
-
 function showRemoveLoading(time) {
 	removeClassFrom(lPG, ["loaded"]);
 
@@ -62,11 +61,8 @@ function navigateTo(id) {
 }
 
 function copyEmail(e) {
-	e.innerHTML = "Copied";
 	navigator.clipboard.writeText("vins25165@gmail.com")
-	setTimeout(() => {
-		e.innerHTML = "Copy Email"
-	}, 2000)
+	alert("copied")
 }
 
 function openLink(link = []) {
